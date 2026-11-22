@@ -27,6 +27,7 @@
 with Cairo;
 
 package Render is
+   Show_HUD : Boolean := True;      --  False: the world only (clean images for --capture)
    procedure Draw (Cr : Cairo.Cairo_Context);
    procedure Draw_Setup (Cr : Cairo.Cairo_Context);   --  world download / loading screen
 end Render;

@@ -1236,7 +1236,9 @@ package body Render is
       if Mode = Title then
          Draw_Title (Cr);
       else
-         Draw_HUD (Cr);
+         if Show_HUD then
+            Draw_HUD (Cr);
+         end if;
          Secrets.Draw_Overlay (Cr);
       end if;
    end Draw;

@@ -771,6 +771,7 @@ package body App is
       Screen_W := 1280.0; Screen_H := 800.0;
       Load_All;
       Seed (Integer'Value (Ada.Environment_Variables.Value ("PAVE_SEED", "1")));
+      Render.Show_HUD := not Ada.Environment_Variables.Exists ("PAVE_NO_HUD");   --  clean frames
       Step (0.5);
       Still ("title");
       Input.Hit (Input.K_Enter) := True;
