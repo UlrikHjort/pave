@@ -1,0 +1,9 @@
+# build output
+/obj/
+/pave
+
+# installed worlds, downloads and saved progress: every player downloads their own maps
+/data/
+
+# Python bytecode
+__pycache__/
